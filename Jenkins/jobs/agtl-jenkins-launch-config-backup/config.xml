@@ -1,0 +1,81 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.4">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/kennedd-github/agt-launch-jenkins-configuration.git</url>
+        <credentialsId>7c8bd24c-8325-447a-88ce-b7b9965dd17f</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>@echo on&#xd;
+PATH&#xd;
+PATH=%PATH%C:\Program Files\Git\cmd;&#xd;
+PATH&#xd;
+&#xd;
+set mytime=%time:~0,2%%time:~3,2%%time:~6,2%&#xd;
+set mydate=%date:~-4%%date:~4,2%%date:~7,2%&#xd;
+set mytime=%mytime: =0%&#xd;
+set timestamp=%mydate%_%mytime%&#xd;
+echo %TIMESTAMP%&#xd;
+&#xd;
+cd %JENKINS_HOME%/..&#xd;
+for /f &quot;tokens=*&quot; %%f in (&apos;cd&apos;) do (&#xd;
+set BACKUP_HOME=%%f\Jenkins_Backup&#xd;
+)&#xd;
+&#xd;
+cd %BACKUP_HOME%&#xd;
+for /f &quot;tokens=*&quot; %%f in (&apos;dir /b&apos;) do (&#xd;
+echo %%f&#xd;
+del /S /Q &quot;%BACKUP_HOME%\%%f&quot;&#xd;
+rmdir /S /Q &quot;%BACKUP_HOME%\%%f&quot;&#xd;
+)&#xd;
+&#xd;
+&#xd;
+mkdir &quot;%BACKUP_HOME%\%TIMESTAMP%&quot;&#xd;
+cd &quot;%BACKUP_HOME%\%TIMESTAMP%&quot;&#xd;
+&#xd;
+git config --global user.name &quot;kennedd-github&quot;&#xd;
+git init&#xd;
+whoami&#xd;
+git config --system --unset credential.helper&#xd;
+git config --list&#xd;
+git config --system --list&#xd;
+&#xd;
+git clone --progress --verbose https://github.com/kennedd-github/agt-launch-jenkins-configuration.git&#xd;
+&#xd;
+cd &quot;%BACKUP_HOME%\%TIMESTAMP%\agt-launch-jenkins-configuration&quot;&#xd;
+if not exist &quot;%BACKUP_HOME%\%TIMESTAMP%\agt-launch-jenkins-configuration\Jenkins&quot; mkdir Jenkins&#xd;
+xcopy /s &quot;%JENKINS_HOME%&quot; &quot;Jenkins&quot; /E /Y /B&#xd;
+git add .&#xd;
+git status&#xd;
+git commit -m &quot;Jenkins Configuration Backup %TIMESTAMP%&quot;&#xd;
+git push&#xd;
+&#xd;
+:End</command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
