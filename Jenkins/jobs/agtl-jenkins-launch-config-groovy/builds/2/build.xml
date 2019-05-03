@@ -15,7 +15,7 @@
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.3.8">
-      <stagesUUID>2cc68018-9844-4006-b392-9fab865fce88</stagesUUID>
+      <stagesUUID>78c1882a-83d8-4c6b-9796-ec2b7d895866</stagesUUID>
       <stagesList>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.3.8">
           <stages>
@@ -563,7 +563,7 @@
               <parallelContent/>
             </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
           </stages>
-          <uuid>2cc68018-9844-4006-b392-9fab865fce88</uuid>
+          <uuid>78c1882a-83d8-4c6b-9796-ec2b7d895866</uuid>
         </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
       </stagesList>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
@@ -571,11 +571,10 @@
       <env class="tree-map"/>
     </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
   </actions>
-  <queueId>305</queueId>
-  <timestamp>1556897877715</timestamp>
-  <startTime>1556897877718</startTime>
-  <result>SUCCESS</result>
-  <duration>56140</duration>
+  <queueId>307</queueId>
+  <timestamp>1556898161729</timestamp>
+  <startTime>1556898161740</startTime>
+  <duration>0</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -657,31 +656,32 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>432757800</long>
+        <long>341088000</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>344424200</long>
+        <long>526463400</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>2893169300</long>
+        <long>3348695400</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>298888700</long>
+        <long>538042900</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>1027690000</long>
+        <long>870174600</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>53</iota>
-    <head>1:53</head>
-    <done>true</done>
+    <iota>35</iota>
+    <head>1:35</head>
+    <start>2</start>
+    <done>false</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
-  <completed>true</completed>
+  <completed>false</completed>
   <checkouts class="hudson.util.PersistedList"/>
 </flow-build>
