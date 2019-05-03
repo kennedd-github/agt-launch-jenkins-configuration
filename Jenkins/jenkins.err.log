@@ -5145,3 +5145,5 @@ May 03, 2019 4:57:59 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
 INFO: agtl-jenkins-launch-config-groovy #10 completed: FAILURE
 May 03, 2019 5:02:50 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
 INFO: agtl-jenkins-launch-config-groovy #11 completed: FAILURE
+May 03, 2019 5:05:38 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #12 completed: SUCCESS

@@ -15,7 +15,7 @@
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.3.8">
-      <stagesUUID>6c50ed92-c209-41a8-9785-fcc3d32b4f5a</stagesUUID>
+      <stagesUUID>19cdfb57-f63a-4243-bf6b-a51ab0099d08</stagesUUID>
       <stagesList>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.3.8">
           <stages>
@@ -254,6 +254,17 @@
                         </arguments>
                       </args>
                     </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Overwrite Clone with Current Config</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
                     <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
                       <name>bat</name>
                       <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
@@ -300,17 +311,6 @@
                         </arguments>
                       </args>
                     </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
-                  </steps>
-                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
-              </branches>
-              <parallelContent/>
-            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
-            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
-              <name>Overwrite Clone with Current Config</name>
-              <branches>
-                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
-                  <name>default</name>
-                  <steps>
                     <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
                       <name>bat</name>
                       <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
@@ -581,7 +581,7 @@
               <parallelContent/>
             </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
           </stages>
-          <uuid>6c50ed92-c209-41a8-9785-fcc3d32b4f5a</uuid>
+          <uuid>19cdfb57-f63a-4243-bf6b-a51ab0099d08</uuid>
         </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
       </stagesList>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
@@ -589,11 +589,10 @@
       <env class="tree-map"/>
     </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
   </actions>
-  <queueId>326</queueId>
-  <timestamp>1556903059185</timestamp>
-  <startTime>1556903059191</startTime>
-  <result>SUCCESS</result>
-  <duration>79154</duration>
+  <queueId>328</queueId>
+  <timestamp>1556903363959</timestamp>
+  <startTime>1556903363971</startTime>
+  <duration>0</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -627,14 +626,13 @@
                 bat label: &apos;&apos;, script: (&apos;echo git.exe init &apos; + &apos;&gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;echo git.exe clone &apos; + env.gitURL + &apos;&gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;@&apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;for /f &apos; + &apos;%%f &apos; + &apos; in (\&apos;dir /b \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins&quot;&apos; + &apos;\&apos;&apos; + &apos;) do del /S /Q \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins\\%%f\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;for /f &apos; + &apos;%%f &apos; + &apos; in (\&apos;dir /b \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins&quot;&apos; + &apos;\&apos;&apos; + &apos;) do rmdir /S /Q \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins\\%%f\&quot;&apos;)
-
             }
         }
 
         stage(&apos;Overwrite Clone with Current Config&apos;) {
             steps {
+                bat label: &apos;&apos;, script: (&apos;for /f &apos; + &apos;%%f &apos; + &apos; in (\&apos;dir /b \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins&quot;&apos; + &apos;\&apos;&apos; + &apos;) do del /S /Q \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins\\%%f\&quot;&apos;)
+                bat label: &apos;&apos;, script: (&apos;for /f &apos; + &apos;%%f &apos; + &apos; in (\&apos;dir /b \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins&quot;&apos; + &apos;\&apos;&apos; + &apos;) do rmdir /S /Q \&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\\Jenkins\\%%f\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;cd &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;echo cd &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\&quot;&apos; + &apos;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;echo xcopy /s \&quot;&apos; + env.JENKINS_HOME + &apos;\&quot;&apos; + &apos; \&quot;agt-launch-jenkins-configuration\\Jenkins\&quot; /E /Y /B &apos; + &apos; &gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
@@ -661,31 +659,32 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>514100400</long>
+        <long>367407100</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>388492400</long>
+        <long>387587200</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>6533498500</long>
+        <long>3258097700</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>158399100</long>
+        <long>381082600</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>2483862800</long>
+        <long>1185634900</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>55</iota>
-    <head>1:55</head>
-    <done>true</done>
+    <iota>37</iota>
+    <head>1:37</head>
+    <start>2</start>
+    <done>false</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
-  <completed>true</completed>
+  <completed>false</completed>
   <checkouts class="hudson.util.PersistedList"/>
 </flow-build>
