@@ -1,186 +1,0 @@
-Started by user [8mha:////4JwL7rPs3JZ2cjg9IrxPHfkrQgHaGQpnwGvaduRhvp2QAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
-Building in workspace C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup
-[agtl-jenkins-launch-config-backup] $ cmd /c call C:\Windows\TEMP\jenkins6831033964302561133.bat
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>PATH
-PATH=C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Windows\system32\config\systemprofile\AppData\Roaming\npm;C:\Windows\system32\config\systemprofile\AppData\Local\Yarn\bin
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>PATH=C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Windows\system32\config\systemprofile\AppData\Roaming\npm;C:\Windows\system32\config\systemprofile\AppData\Local\Yarn\binC:\Program Files\Git\cmd; 
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>PATH
-PATH=C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Windows\system32\config\systemprofile\AppData\Roaming\npm;C:\Windows\system32\config\systemprofile\AppData\Local\Yarn\binC:\Program Files\Git\cmd;
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>set mytime=142341 
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>set mydate=20190502 
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>set mytime=142341 
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>set timestamp=20190502_142341 
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>echo 20190502_142341 
-20190502_142341
-
-C:\Program Files (x86)\Jenkins\workspace\agtl-jenkins-launch-config-backup>cd C:\Program Files (x86)\Jenkins/.. 
-
-C:\Program Files (x86)>for /F "tokens=*" %f in ('cd') do (set BACKUP_HOME=%f\Jenkins_Backup ) 
-
-C:\Program Files (x86)>(set BACKUP_HOME=C:\Program Files (x86)\Jenkins_Backup ) 
-
-C:\Program Files (x86)>cd C:\Program Files (x86)\Jenkins_Backup 
-
-C:\Program Files (x86)\Jenkins_Backup>for /F "tokens=*" %f in ('dir /b') do (
-echo %f  
- del /S /Q "C:\Program Files (x86)\Jenkins_Backup\%f"  
- rmdir /S /Q "C:\Program Files (x86)\Jenkins_Backup\%f" 
-) 
-
-C:\Program Files (x86)\Jenkins_Backup>(
-echo 1234  
- del /S /Q "C:\Program Files (x86)\Jenkins_Backup\1234"  
- rmdir /S /Q "C:\Program Files (x86)\Jenkins_Backup\1234" 
-) 
-1234
-The process cannot access the file because it is being used by another process.
-
-C:\Program Files (x86)\Jenkins_Backup>(
-echo 20190502_142036  
- del /S /Q "C:\Program Files (x86)\Jenkins_Backup\20190502_142036"  
- rmdir /S /Q "C:\Program Files (x86)\Jenkins_Backup\20190502_142036" 
-) 
-20190502_142036
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\COMMIT_EDITMSG
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\config
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\description
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\HEAD
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\index
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\applypatch-msg.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\commit-msg.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\fsmonitor-watchman.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\post-update.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\pre-applypatch.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\pre-commit.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\pre-push.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\pre-rebase.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\pre-receive.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\prepare-commit-msg.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\hooks\update.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\info\exclude
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\logs\HEAD
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\logs\refs\heads\master
-C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\objects\1e\3b89a008c310ad0a7a160f971442addbe86709
-Access is denied.
-C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\objects\ba\b3fbe06811d3c562d08d97f91144546fbce8f4
-Access is denied.
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\.git\refs\heads\master
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\README.md
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\config
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\description
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\HEAD
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\index
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\packed-refs
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\applypatch-msg.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\commit-msg.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\fsmonitor-watchman.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\post-update.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\pre-applypatch.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\pre-commit.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\pre-push.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\pre-rebase.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\pre-receive.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\prepare-commit-msg.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\hooks\update.sample
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\info\exclude
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\logs\HEAD
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\logs\refs\heads\master
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\logs\refs\remotes\origin\HEAD
-C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\objects\98\cb5e949d0eebbd4e69b125302d4fcdcb45c396
-Access is denied.
-C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\objects\ed\61707888a7bedf810587a5ca7e721853c978d0
-Access is denied.
-C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\objects\f1\ecfa8ddf372b24f1e5d1e01711b46cd12353e1
-Access is denied.
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\refs\heads\master
-Deleted file - C:\Program Files (x86)\Jenkins_Backup\20190502_142036\agt-launch-jenkins-configuration\.git\refs\remotes\origin\HEAD
-
-C:\Program Files (x86)\Jenkins_Backup>mkdir "C:\Program Files (x86)\Jenkins_Backup\20190502_142341" 
-
-C:\Program Files (x86)\Jenkins_Backup>cd "C:\Program Files (x86)\Jenkins_Backup\20190502_142341" 
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>git config --global user.name "kennedd-github" 
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>git init 
-Initialized empty Git repository in C:/Program Files (x86)/Jenkins_Backup/20190502_142341/.git/
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>whoami
-nt authority\system
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>git config --system --unset credential.helper 
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>git config --list 
-core.symlinks=false
-core.autocrlf=true
-core.fscache=true
-color.diff=auto
-color.status=auto
-color.branch=auto
-color.interactive=true
-help.format=html
-rebase.autosquash=true
-http.sslbackend=openssl
-http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-user.email=david.kennedy@mail.com
-user.name=kennedd-github
-core.repositoryformatversion=0
-core.filemode=false
-core.bare=false
-core.logallrefupdates=true
-core.symlinks=false
-core.ignorecase=true
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>git config --system --list 
-http.sslbackend=openssl
-http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>git clone --progress --verbose https://github.com/kennedd-github/agt-launch-jenkins-configuration.git 
-Cloning into 'agt-launch-jenkins-configuration'...
-POST git-upload-pack (175 bytes)
-remote: Enumerating objects: 3, done.        
-remote: Counting objects:  33% (1/3)           remote: Counting objects:  66% (2/3)           remote: Counting objects: 100% (3/3)           remote: Counting objects: 100% (3/3), done.        
-remote: Compressing objects:  50% (1/2)           remote: Compressing objects: 100% (2/2)           remote: Compressing objects: 100% (2/2), done.        
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0        
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341>cd "C:\Program Files (x86)\Jenkins_Backup\20190502_142341\agt-launch-jenkins-configuration" 
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341\agt-launch-jenkins-configuration>xcopy /s "C:\Program Files (x86)\Jenkins" Jenkins /E /Y /B 
-Does Jenkins specify a file name
-or directory name on the target
-(F = file, D = directory)? ?   —  †ì¤@ê÷Ø\á ¸Œÿ                 ¸Œÿ}6T°Hï÷äHá    ÿ°ûus0û÷ðû÷¶)á usPÿ                usPÿ                èû÷ðû÷    0û÷          ¨‹ÿ 0pus¨‹ÿ   (ë÷ø àÿ;   ¸ÿ            Höÿ* 4     Pë÷    ë÷ë÷gtuspô÷us  ÿ    (úÿ0tus9á     0û÷9á ÿ  dusPÿ(úÿ          ø P dus¨‹ÿC : \   0 0 0 0 0 4 0 9   îÀ ÿJ K   0 0 0 0 0 4 0 9   ÿÿ  KÒ˜OB    ÿJ  >  pK  þÿÿÿ@   > ?Ùùî     >      À ÿ¾   0lÿæùîÀ ÿ¬õ÷   3.É        J  åÿ   ˜åÿ
-   åÿ˜åÿB  å  þÿÿÿ       8î÷     B     À ÿÂ   0lÿ 	 øåÿ¬õ÷ t«w3.É:þÿÿÿàì÷ô¦w8   @   ´ÿ|ì÷Ä’	  	  
-   ˜åÿ   `ÿ t«w    Èí÷ß0ïvj¦w    ˜åÿy˜åÿ       Èì÷_öïvU   y4us¸Œÿ¸ê÷                  í÷                ïv0pus¨‹ÿ  ˜OP   B     ÿ   Wþÿÿ    4\ÿ    q¦wˆ  ˆœÿÿÿ    ÿygþÿÿ³ ²T\ÿÈí÷   ˆ  ˆÆÿÿÿ     Ò‰v	  ³ ²ðñ÷  Èí÷³ ²¨h* * À ÿ€   ˆÿ     ÿ$   ³ ²‚O‹vTlÿP   À ÿ€   Œÿ       6$¦wÐ˜O    ÿ˜  î÷
-      6$¦w3Ð˜OÀÿÿ  ÿÈÿÿ  ÿæÿÿÿ³ ² 4  4         ˆ  ˆŽÿ³ ²;   ˆ  ˆ¦ÿÿÿ4  4   ˆ  ˆ€   ¼í  ˆ  ˆ¬ÿÿÿ  ÿ   €   €   ˜  ðþÿTlÿ      h	 €       øþÿ4   4  4p	 .   h	 €         ÿˆ  ˆ   h   4   h   ü÷h   `ÿ0lÿï÷       ˜  ü÷ t«w3#É:þÿÿÿ8ï÷j¦w    Èÿÿ°ûus`    ï÷4us¸Œÿ í÷                                   ï÷üus  ÿu3T°û÷>á    ÿðû÷èû÷    @á     ”   À  ÿPúÿ    hõÿÈ     ²  %`   0û÷0pus¨‹ÿ  ÷                               Ï˜O  dus¨‹ÿC : \ P r o g r a m   F i l e s   ( x 8 6 ) \ J e n k i n s                                                                                                                                                                                                                                                                                                                                                                                                                     4us¸Œÿ¨ï÷                                          dus¨‹ÿC : \ P r o g r a m   F i l e s   ( x 8 6 ) \ J e n k i n s _ B a c k u p \ 2 0 1 9 0 5 0 2 _ 1 4 2 3 4 1 \ a g t - l a u n c h - j e n k i n s - c o n f i g u r a t i o n \ J e n k i n s                                                                                                                                                                                                                                                                                                                                             dus¸Œÿðñ÷^     V      T                        dus¨‹ÿC : \ P r o g r a m   F i l e s   ( x 8 6 ) \ J e n k i n s                                                                                                                                                                                                                                                                                                                                                                                                                                                                             dus¸Œÿ8ô÷                            ôÿdus0pus¨‹ÿ    dusPÿxøÿ          „¹u     dusPÿ ÿpúÿdusPÿ8•ÿ             ÷÷dusPÿ        dusPÿ8”ÿ              ÿdusPÿ        dusPÿ(•ÿ                dusPÿ        dusPÿ”ÿ          Lú÷    dusPÿôÿhÿÿdusPÿø”ÿ               dusPÿ ÷÷    dusPÿøùÿ          €ú÷    dusPÿ  \     dusPÿ¨“ÿ                  dusPÿ        dusPÿúÿ                  dusPÿ        dusPÿè“ÿ                 dusPÿ Ê§w    dusPÿ”ÿ          Èþîv ;úvdus4us¸Œÿ€ö÷                                  Pÿ ôÿ    dusPÿ¨ùÿ                  dusPÿ ¦w    dusPÿ(”ÿ          d\ÿ þÿÿdusPÿ        dusPÿø“ÿ                  dusPÿ        dusPÿ•ÿ                 dusPÿ       dusPÿH”ÿ          €     ÿdusPÿ        dusPÿØ”ÿ               dusXŒÿ        dusPÿ0öÿ              dusÿ ÿÿÿ    dusPÿPúÿ
-              dusÿ        dusPÿXùÿ              dusHÿ 9úv    dusPÿÈ“ÿ                  dusHÿhus`þÿdusPÿˆ“ÿ               ú÷dusHÿ       dusPÿÈ”ÿ                  dusHÿ   ðþÿdusPÿ˜“ÿ              Q3T° ü÷£á  T°           \á ¸“ÿusè‘ÿ8¡usè‹ÿ                      ÿ/V      ðØÿÿÿÿÿÿ        ÿ°ÿPÿ   usPÿXÿÿ^   Xÿÿ_   °ÿ ÿPÿ,V  1u     °                                   ˜ðÿ                   Ú+á     T° û÷    Tü÷Paá õÅB²   dü÷`.á     o*(*Y T° -á  -á   7 -á Y T°4ü÷H÷É°ü÷Paá ­òB²    xü÷j‚w  7ði‚w“6ÝËÀü÷­§w  7Â˜O          7û             Â˜O„ü÷    Èü÷ t«w{“È:    Ðü÷Z­§wÿÿÿÿ¶ ¦w         -á   7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Actx       3  Ü                        4   |                            Nï&˜  D   à  `      ºq2ó@  J   Œ        [IY-¬  2   à         ÍêÎ2à  B   $  6      È_P8\  ^   ¼  h      D(±$  V   |  ˜     	   ì         |  Ð        L           ì  Œ        x-          Œ0  ˜         $1  Ì         ð1  ð      	   à2  (         3        SsHd,               Œ      ˜  ,   ^   ^                                          $   8       C : \ W i n d o w s \ W i n S x s \     Nï&  D   d  `     ºq2óÄ  J          [IY-0  2   d        ÍêÎ2d
-  B   ¨
-  6     È_P8à  ^   @  h     D(±¨  V      ˜     M i c r o s o f t . W i n d o w s . S y s t e m C o m p a t i b l e     l        Ð     ,   Ü  ÃdUKKŸÎ                                          ¸   
-                      M i c r o s o f t . W i n d o w s . S y s t e m C o m p a t i b l e , p r o c e s s o r A r c h i t e c t u r e = " x 8 6 " , p u b l i c K e y T o k e n = " 6 5 9 5 b 6 4 1 4 4 c c f 1 d f " , t y p e = " w i n 3 2 " , v e r s i o n = " 6 . 0 . 9 6 0 0 . 1 6 3 8 4 " S y s t e m   D e f a u l t   C o n t e x t   x 8 6 _ m i c r o s o f t . w i n d o w s . s y s t e m c o m p a t i b l e _ 6 5 9 5 b 6 4 1 4 4 c c f 1 d f _ 6 . 0 . 9 6 0 0 . 1 6 3 8 4 _ n o n e _ b 1 9 0 d 9 3 6 b d c a 3 c 1 0   M i c r o s o f t . W i n d o w s . I s o l a t i o n A u t o m a t i o n   l         |     ú   €  €òKKŸÎ                                          °   |                      M i c r o s o f t . W i n d o w s . I s o l a t i o n A u t o m a t i o n , p r o c e s s o r A r c h i t e c t u r e = " x 8 6 " , p u b l i c K e y T o k e n = " 6 5 9 5 b 6 4 1 4 4 c c f 1 d f " , t y p e = " w i n 3 2 " , v e r s i o n = " 1 . 0 . 0 . 0 " C : \ W i n d o w s \ W i n S x S \ m a n i f e s t s \ x 8 6 _ m i c r o s o f t . w i n d o w s . i s o l a t i o n a u t o m a t i o n _ 6 5 9 5 b 6 4 1 4 4 c c f 1 d f _ 1 . 0 . 0 . 0 _ n o n e _ 3 5 d 3 5 7 a 6 6 c 3 8 a d e 4 . m a n i f e s t   x 8 6 _ m i c r o s o f t . w i n d o w s . i s o l a t i o n a u t o m a t i o n _ 6 5 9 5 b 6 4 1 4 4 c c f 1 d f _ 1 . 0 . 0 . 0 _ n o n e _ 3 5 d 3 5 7 a 6 6 c 3 8 a d e 4     M i c r o s o f t . W i n d o w s . G d i P l u s   l       ú   Ð     ð   Ê  ©ê¶éeïÔ                                          ¦   ¼	                      M i c r o s o f t . W i n d o w s . G d i P l u s , p r o c e s s o r A r c h i t e c t u r e = " x 8 6 " , p u b l i c K e y T o k e n = " 6 5 9 5 b 6 4 1 4 4 c c f 1 d f " , t y p e = " 
-Does Jenkins specify a file name
-or directory name on the target
-(F = file, D = directory)? 
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341\agt-launch-jenkins-configuration>git add . 
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341\agt-launch-jenkins-configuration>git status 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-nothing to commit, working tree clean
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341\agt-launch-jenkins-configuration>git commit -m "Jenkins Configuration Backup 20190502_142341" 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-nothing to commit, working tree clean
-
-C:\Program Files (x86)\Jenkins_Backup\20190502_142341\agt-launch-jenkins-configuration>git push 
-Build was aborted
-Aborted by [8mha:////4JwL7rPs3JZ2cjg9IrxPHfkrQgHaGQpnwGvaduRhvp2QAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
-Finished: ABORTED
