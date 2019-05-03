@@ -546,7 +546,8 @@
   <queueId>319</queueId>
   <timestamp>1556902088509</timestamp>
   <startTime>1556902088514</startTime>
-  <duration>0</duration>
+  <result>SUCCESS</result>
+  <duration>71793</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -611,7 +612,7 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>334145100</long>
+        <long>489372000</long>
       </entry>
       <entry>
         <string>classLoad</string>
@@ -619,7 +620,7 @@
       </entry>
       <entry>
         <string>run</string>
-        <long>3103792600</long>
+        <long>5096349900</long>
       </entry>
       <entry>
         <string>parse</string>
@@ -627,16 +628,15 @@
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>611004400</long>
+        <long>1702998300</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>35</iota>
-    <head>1:35</head>
-    <start>2</start>
-    <done>false</done>
+    <iota>53</iota>
+    <head>1:53</head>
+    <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
-  <completed>false</completed>
+  <completed>true</completed>
   <checkouts class="hudson.util.PersistedList"/>
 </flow-build>

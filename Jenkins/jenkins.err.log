@@ -5133,3 +5133,15 @@ May 03, 2019 4:44:23 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
 INFO: agtl-jenkins-launch-config-groovy #6 completed: SUCCESS
 May 03, 2019 4:47:56 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
 INFO: agtl-jenkins-launch-config-groovy #7 completed: ABORTED
+May 03, 2019 4:49:20 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #8 completed: SUCCESS
+May 03, 2019 4:55:32 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #9 completed: FAILURE
+May 03, 2019 4:55:55 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started telemetry collection
+May 03, 2019 4:55:55 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished telemetry collection. 106 ms
+May 03, 2019 4:57:59 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #10 completed: FAILURE
+May 03, 2019 5:02:50 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #11 completed: FAILURE
