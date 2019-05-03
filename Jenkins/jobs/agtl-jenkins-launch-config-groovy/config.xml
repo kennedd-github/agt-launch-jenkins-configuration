@@ -19,7 +19,6 @@
     agent any 
     environment {
         gitURL = &quot;https://github.com/kennedd-github/agt-launch-jenkins-configuration.git&quot;
-        PERCENTC = &quot;%&quot;
     }
     
     stages {
@@ -30,9 +29,9 @@
                     def now = new Date()
                     TIMESTAMP = now.format(&quot;yyyyMMdd_HHmmss&quot;, TimeZone.getTimeZone(&apos;GMT&apos;))
                     BACKUP_HOME = (env.JENKINS_HOME + &apos;\\..\\Jenkins_Backup&apos;)
+                    echo TIMESTAMP
+                    echo BACKUP_HOME
                 }
-                echo TIMESTAMP
-                echo BACKUP_HOME
                 bat label: &apos;&apos;, script: (&apos;for /f &apos; + &apos;%%f &apos; + &apos; in (\&apos;dir /b \&quot;&apos; + BACKUP_HOME + &apos;\&quot;&apos; + &apos;\&apos;&apos; + &apos;) do del /S /Q \&quot;&apos; + BACKUP_HOME + &apos;\\%%f\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;for /f &apos; + &apos;%%f &apos; + &apos; in (\&apos;dir /b \&quot;&apos; + BACKUP_HOME + &apos;\&quot;&apos; + &apos;\&apos;&apos; + &apos;) do rmdir /S /Q \&quot;&apos; + BACKUP_HOME + &apos;\\%%f\&quot;&apos;)
                 bat label: &apos;&apos;, script: (&apos;mkdir &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\&quot;&apos;)
@@ -68,22 +67,6 @@
                 bat label: &apos;&apos;, script: (&apos;@&apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
             }
         }
-
- /*       stage(&apos;Clone Config From GIT&apos;) {
-            steps {
-                bat label: &apos;&apos;, script: (&apos;cd &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo cd &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\&quot;&apos; + &apos;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo git.exe init &apos; + &apos;&gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo git.exe clone &apos; + env.gitURL + &apos;&gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo xcopy /s \&quot;&apos; + env.JENKINS_HOME + &apos;\&quot;&apos; + &apos; \&quot;agt-launch-jenkins-configuration\\Jenkins\&quot; /E /Y /B &apos; + &apos; &gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo cd &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\agt-launch-jenkins-configuration\&quot;&apos; + &apos; &gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo git.exe add . &apos; + &apos;&gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo git.exe status &apos; + &apos;&gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;echo git.exe commit -m \&quot;Jenkins Configuration Backup &apos; + TIMESTAMP + &apos;\&quot;&apos; + &apos; &gt;&gt; &apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-                bat label: &apos;&apos;, script: (&apos;@&apos; + &apos;\&quot;&apos; + BACKUP_HOME + &apos;\\&apos; + TIMESTAMP + &apos;\\&apos; + &apos;git.bat&apos; + &apos;\&quot;&apos;)
-            }
-        }*/
-
     }
 }
 </script>
