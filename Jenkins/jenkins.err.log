@@ -5129,3 +5129,7 @@ May 03, 2019 3:47:48 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
 INFO: agtl-jenkins-launch-config-groovy #4 completed: SUCCESS
 May 03, 2019 4:41:41 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
 INFO: agtl-jenkins-launch-config-groovy #5 completed: SUCCESS
+May 03, 2019 4:44:23 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #6 completed: SUCCESS
+May 03, 2019 4:47:56 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: agtl-jenkins-launch-config-groovy #7 completed: ABORTED

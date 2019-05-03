@@ -2,6 +2,6 @@
 <list>
   <flow-owner plugin="workflow-job@2.32">
     <job>agtl-jenkins-launch-config-groovy</job>
-    <id>6</id>
+    <id>8</id>
   </flow-owner>
 </list>
